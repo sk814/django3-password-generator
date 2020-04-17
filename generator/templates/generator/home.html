@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<h2>Password Generator:)</h2>
+<form action="{% url 'sanjeev1' %}">
+    <select name="length">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10" selected="selected">10</option>
+    </select>
+    <br>
+    <input type="checkbox" name="Uc"> Uppercase
+    <br>
+    <input type="checkbox" name="numbers"> Number
+    <br>
+    <input type="checkbox" name="Letters"> Letters
+    <br>
+    <input type="checkbox" name="Specialchar"> Special char
+    <br>
+    <input type="submit" value="Generate_Password">
+
+</form>
+
+<form action="{% url 'review' %}">
+    <input type="submit" value="Review Page">
+</form>
